@@ -93,7 +93,8 @@ Implements a **Delta–Vega neutral hedging strategy** on a portfolio of exotic 
    ```
    The script automatically adds all `src/` subfolders to the path and executes the full pipeline.
 
-**Requirements:** MATLAB R2021b or later (uses `datetime`, `table`, and standard optimisation/FFT routines — no additional toolboxes required beyond the Optimization Toolbox).
+**Requirements:** MATLAB R2021b or later.  
+**Toolboxes:** Statistics and Machine Learning Toolbox, Global Optimization Toolbox.
 
 ---
 
