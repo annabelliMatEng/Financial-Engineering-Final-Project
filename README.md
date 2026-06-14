@@ -1,7 +1,7 @@
 # Option Pricing & Risk Management via Linear Additive Models
 
 **Final Project — Financial Engineering (Group 2b)**  
-Politecnico di Milano · A.Y. 2024/2025
+Politecnico di Milano · A.Y. 2025/2026
 
 ---
 
@@ -46,7 +46,8 @@ Biblio/                      ← Reference papers
 Visual comparison of the probability density functions of AB, MA, and GL under a common parametrisation, to build intuition on the tail behaviour of each process.
 
 ### Point 1 — Market curve calibration
-Bootstrap of the **discount curve** and the **forward curve** (including absolute dividends) from futures prices and option put-call parity. Outputs discount factors B(t) and forward prices F(T) for all available maturities.
+Extraction of the **discount curve** and the **forward curve** (including absolute dividends) from futures prices and option put-call parity. We follow the synthetic-forward methodology, which is based on the put-call parity performing a linear regression.
+Outputs discount factors B(t) and forward prices F(T) for all available maturities.
 
 ### Point 2 — Implied volatility surface calibration
 Constructs the forward-OTM surface, estimates **ATM normal (Bachelier) volatility** by maturity, and calibrates each model's parameters by minimising the pricing error on the full surface. Option prices are computed via the **Lewis-FFT** formula using the model's characteristic function.
@@ -94,7 +95,7 @@ Implements a **Delta–Vega neutral hedging strategy** on a portfolio of exotic 
    The script automatically adds all `src/` subfolders to the path and executes the full pipeline.
 
 **Requirements:** MATLAB R2021b or later.  
-**Toolboxes:** Statistics and Machine Learning Toolbox, Global Optimization Toolbox.
+**Toolboxes:** Statistics and Machine Learning Toolbox, Global Optimization Toolbox, Financial Toolbox.
 
 ---
 
@@ -106,7 +107,3 @@ Implements a **Delta–Vega neutral hedging strategy** on a portfolio of exotic 
 - Baviera (2023) — *The additive Bachelier model with an application to the oil option market in the Covid period*
 
 ---
-
-## Authors
-
-Group 2b — Financial Engineering, Politecnico di Milano
